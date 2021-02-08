@@ -5,7 +5,7 @@
 <title>ResultPage</title>
 </head>
 <body>
-	<h1>Reporting Page</h1>
+	<h1 style="text-align: center">Reporting Page</h1>
 	<div>Marques</div>
 	<ul>
 		<c:forEach var="item" items="${marques}">

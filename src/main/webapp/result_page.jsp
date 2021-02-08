@@ -16,7 +16,9 @@
 	<div>Les 10 dernières voitures ajoutées</div>
 	<ul>
 		<c:forEach var="car" items="${lastAdded}">
-	 		<li> ${car} </li>
+	 		<li> ${car} <c:forEach var="color" items="${car.colors}">
+	 			${color.libelle}
+	 		 </c:forEach></li>
 	 	</c:forEach>
 	</ul>
 </body>
